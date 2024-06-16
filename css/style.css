@@ -1,0 +1,64 @@
+body {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*.quattrocento-regular {
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quattrocento-bold {
+    font-family: "Quattrocento", serif;
+    font-weight: 700;
+    font-style: normal;
+  }*/
+
+header {
+  background-color: #780909;
+  color: #f4bc00;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #f4bc00;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #780909;
+  color: #f4bc00;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 20px;
+}

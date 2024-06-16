@@ -1,0 +1,34 @@
+main {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 30px;
+    padding: 5px;
+}
+div {
+
+    background-color: #f4bc00;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 30px;
+    margin: 20px;
+    color: #780909;
+
+}
+
+main div img{
+    width: 100%;
+}
+
+h4 {
+    font-size: 20px;
+    align-items: center;
+}
+
+h1 {
+    color: #f4bc00;
+    text-align: center;
+    font-size: 40px;
+}
+
+
