@@ -1,12 +1,21 @@
-main {
-    
+#cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assetsinicio/dining-room-5114247_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#personajes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid: 30px;
     padding: 5px;
+    background-color: black;
 }
-div {
 
+div {
     background-color: #f4bc00;
     border-radius: 5px;
     padding: 5px;
