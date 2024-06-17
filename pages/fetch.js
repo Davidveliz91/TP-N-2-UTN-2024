@@ -7,6 +7,7 @@ fetch("https://hp-api.onrender.com/api/characters").
   })
   .then((data) => {
     const personajes = data;
+    fetchPersonajes = data
     //console.log(personajes)
     personajes.forEach((personaje) => {
       let srcImage;
@@ -15,7 +16,7 @@ fetch("https://hp-api.onrender.com/api/characters").
       } else {
         srcImage = "./assetspersonajes/1081-producto-71wd9qtqvll-ac-ul1500-3330.jpg"
       }
-
+      
       $personajesContainer.innerHTML += `
       <div>   
           <img src="${srcImage}" alt="imagen de ${personaje.name}">
@@ -30,3 +31,8 @@ fetch("https://hp-api.onrender.com/api/characters").
     });
 
   })
+
+  function search() {
+    console.log("Buscando!")
+  }
+
