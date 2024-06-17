@@ -15,7 +15,7 @@
     background-color: black;
 }
 
-div {
+#card-personaje {
     background-color: #f4bc00;
     border-radius: 5px;
     padding: 5px;
@@ -27,6 +27,7 @@ div {
 
 main div img {
     width: 100%;
+    height: auto;
 }
 
 h4 {

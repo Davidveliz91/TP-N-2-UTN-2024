@@ -10,7 +10,7 @@ function createCardPersonaje(personaje) {
   }
 
   $personajesContainer.innerHTML += `
-  <div>   
+  <div id="card-personaje">   
       <img src="${srcImage}" alt="imagen de ${personaje.name}">
       <h4>${personaje.name}</h4>
       <p>Genero: ${personaje.gender}</p>
@@ -30,6 +30,7 @@ function includeName(personaje, name) {
 }
 
 function fetching(name) {
+  $personajesContainer.innerHTML = ""
   fetch("https://hp-api.onrender.com/api/characters").
     then((respuesta) => {
       return respuesta.json();
@@ -37,23 +38,32 @@ function fetching(name) {
     .then((data) => {
       let personajes;
       if (name) {
-        $personajesContainer.innerHTML = ""
         personajes = data.filter((personaje) => includeName(personaje, name))
       } else {
         personajes = data;
       }
 
-      personajes.forEach(createCardPersonaje);
+      if (personajes.length > 0) {
+        personajes.forEach(createCardPersonaje);
+      } else {
+        $personajesContainer.innerHTML = `<h1> No se encontro nada </h1> <button onclick="refresh()"> Refrescar </button>`
+      }
     })
 }
 
+function refresh() {
+  const searchInput = document.getElementById('buscador');
+  searchInput.value = ""
+  fetching()
+}
 
 function search() {
   console.log("Buscando!")
   const searchInput = document.getElementById('buscador');
-  const searched = searchInput.value.toLowerCase();
-  fetching(searched)
-
+  if (searchInput.value) {
+    const searched = searchInput.value.toLowerCase();
+    fetching(searched)
+  }
 }
 
 fetching()
