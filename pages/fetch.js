@@ -14,10 +14,10 @@ function createCardPersonaje(personaje) {
       <img src="${srcImage}" alt="imagen de ${personaje.name}">
       <h4>${personaje.name}</h4>
       <p>Genero: ${personaje.gender}</p>
-      <p>Fecha de Nacimiento:${personaje.yearOfBirth}</p>
-      <p>Raza:${personaje.ancestry}</p>
-      <p>Casa:${personaje.house}</p>
-      <p>Patronus:${personaje.patronus}</p>
+      <p>Fecha de Nacimiento: ${personaje.yearOfBirth}</p>
+      <p>Raza: ${personaje.ancestry}</p>
+      <p>Casa: ${personaje.house}</p>
+      <p>Patronus: ${personaje.patronus}</p>
   </div>
 `;
 }

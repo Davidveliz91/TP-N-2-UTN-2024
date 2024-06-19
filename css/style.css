@@ -2,6 +2,8 @@ body {
   font-family: "Quattrocento", serif;
   font-weight: 700;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -29,7 +31,7 @@ nav ul li a {
 }
 
 main {
-  background-image: url(../assetsinicio/dining-room-5114247_1920.jpg);
+  /*background-image: url(../assetsinicio/dining-room-5114247_1920.jpg);*/
   background-size: cover;
   background-position: center;
   padding: 2em;
@@ -39,8 +41,23 @@ main {
 #intro {
   max-width: 800px;
   margin: 0 auto;
-  color: #f4bc00;
+
 }
+
+h1{
+  font-size: 30px;
+}
+
+#introduccion {
+  display: flex;
+  justify-content:space-around;
+  font-size: 20px;
+}
+
+#books-movies {
+  display: flex;
+}
+
 
 footer {
   background-color: #780909;
