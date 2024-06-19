@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f4bc00;
+  height: auto;
 }
 
 :root {
@@ -14,7 +15,7 @@ body {
 
 header {
   background-color: var(--color-primary);
-  color: var(--color-secundary));
+  color: var(--color-secundary);
   padding: 1em 0;
 }
 
@@ -36,58 +37,113 @@ nav ul li a {
 }
 
 main {
-  background-image: url(../assetsinicio/gabriel-kraus-3X5ZhsDClY8-unsplash.jpg);
+  display: flex;
+  background-image: url(../assetsinicio/dining-room2-5114247_1920.jpg);
   background-size: cover;
-  padding: 10px;
+  background-position: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/*#intro {
+#intro {
   max-width: 800px;
   margin: 0 auto;
-}*/
+}
 
 h1 {
   font-size: 30px;
-}
-h2 {
-  font-size: 28px;
+  margin-top: 50px;
 }
 
-#introduccion {
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
+h2 {
+  font-size: 30px;
+  margin-top: 100px;
 }
+
+#introduccion p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+  margin-bottom: 80px;
+}
+
 
 #books-movies {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   padding: 0;
-  
 }
 
 #books-movies h3 {
-  font-size: 24px;
+  font-size: 26px;
+  margin-bottom: 50px;
 }
 
-#books-list, #movies-list {
+#books-list,
+#movies-list {
   flex: 1;
   padding: 10px;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 #books-movies h4 {
   font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 
+#books,
+#movies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#books li p,
+#movies li p {
+  margin: 5px 0 0;
+}
+
+#house {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.card {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-secundary);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card span {
+  display: block;
+  margin-bottom: 5px;
+}
 
 footer {
   background-color: var(--color-primary);
   color: var(--color-secundary);
   text-align: center;
   padding: 1em 0;
-  position: fixed;
   width: 100%;
   bottom: 0;
   font-size: 20px;
