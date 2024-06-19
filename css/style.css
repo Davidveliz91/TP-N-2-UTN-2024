@@ -4,12 +4,17 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
+  color: #f4bc00;
 }
 
+:root {
+  --color-primary: #780909;
+  --color-secundary: #f4bc00;
+}
 
 header {
-  background-color: #780909;
-  color: #f4bc00;
+  background-color: var(--color-primary);
+  color: var(--color-secundary));
   padding: 1em 0;
 }
 
@@ -25,43 +30,61 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #f4bc00;
+  color: var(--color-secundary);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 main {
-  /*background-image: url(../assetsinicio/dining-room-5114247_1920.jpg);*/
+  background-image: url(../assetsinicio/gabriel-kraus-3X5ZhsDClY8-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  padding: 2em;
-  text-align: center;
+  padding: 10px;
 }
 
-#intro {
+/*#intro {
   max-width: 800px;
   margin: 0 auto;
+}*/
 
-}
-
-h1{
+h1 {
   font-size: 30px;
+}
+h2 {
+  font-size: 28px;
 }
 
 #introduccion {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   font-size: 20px;
 }
 
 #books-movies {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  
+}
+
+#books-movies h3 {
+  font-size: 24px;
+}
+
+#books-list, #movies-list {
+  flex: 1;
+  padding: 10px;
+  justify-content:space-around;
+}
+
+#books-movies h4 {
+  font-size: 20px;
 }
 
 
 footer {
-  background-color: #780909;
-  color: #f4bc00;
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
   text-align: center;
   padding: 1em 0;
   position: fixed;
