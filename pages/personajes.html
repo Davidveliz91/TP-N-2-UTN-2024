@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/personajesgrid.css">
   <link rel="stylesheet" href="../css/personajes.css" />
 </head>
 
@@ -32,10 +31,12 @@
       <div id="search-container">
         <input type="text" id="buscador" placeholder="Busca tu personaje..." />
         <button onclick="search();">Buscar</button>
+        <button onclick="refresh();">Resetear</button>
       </div>
     </section>
-    <section id="personajes">
-
+    <section>
+      <div id="no-results"></div>  
+      <div id="personajes"></div>
       <script src="./fetch.js"></script>
     </section>
 

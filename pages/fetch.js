@@ -1,5 +1,5 @@
 const $personajesContainer = document.getElementById("personajes")
-
+const $noResults = document.getElementById("no-results")
 
 function createCardPersonaje(personaje) {
   let srcImage;
@@ -45,8 +45,10 @@ function fetching(name) {
 
       if (personajes.length > 0) {
         personajes.forEach(createCardPersonaje);
+        $noResults.innerHTML = ``
       } else {
-        $personajesContainer.innerHTML = `<h1> No se encontro nada </h1> <button onclick="refresh()"> Refrescar </button>`
+        $personajesContainer.innerHTML = ``
+        $noResults.innerHTML = `<h1> No se encontró nada. </h1>`
       }
     })
 }
@@ -58,7 +60,7 @@ function refresh() {
 }
 
 function search() {
-  console.log("Buscando!")
+
   const searchInput = document.getElementById('buscador');
   if (searchInput.value) {
     const searched = searchInput.value.toLowerCase();
