@@ -36,9 +36,10 @@ nav ul li a {
   font-size: 22px;
 }
 
+
 main {
   display: flex;
-  background-image: url(../assetsinicio/dining-room2-5114247_1920.jpg);
+  background-image: url(../assetsinicio/lei-min-1.jpg);
   background-size: cover;
   background-position: center;
   justify-content: space-evenly;
@@ -66,7 +67,7 @@ h2 {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
   margin-bottom: 80px;
 }
 
@@ -138,6 +139,10 @@ h2 {
   display: block;
   margin-bottom: 5px;
 }
+:hover.card{
+  background-color: #7c3131;
+}
+
 
 footer {
   background-color: var(--color-primary);
