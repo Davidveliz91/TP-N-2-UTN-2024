@@ -11,6 +11,6 @@ En este proyecto, mediante una API, generamos una Landing page donde podremos ex
 ## Características:
 
 - **Busqueda por personaje:** Buscador dinamico de personajes por su nombre.
-- **Imagenes dinamicas:**Si no hay imagen disponible, se reemplazo por una generica en su reemplazo.
+- **Imagenes dinamicas:** Si no hay imagen disponible, se reemplazo por una generica en su reemplazo.
 
 
